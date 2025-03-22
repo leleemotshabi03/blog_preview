@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Preview Card</title>
+    <style>
+        body {
+            background: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: figtree;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 320px;
+            transition: 0.3s;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 15px;
+        }
+
+        .card-content h3 {
+            margin: 0 0 10px;
+            font-size: 1.25rem;
+            color: #333;
+        }
+
+        .card-content p {
+            margin: 0;
+            color: #555;
+            font-size: 0.95rem;
+        }
+
+        .card-content .read-more {
+            display: inline-block;
+            margin-top: 10px;
+            color: #4CAF50;
+            font-weight: bold;
+            font-size: 0.9rem;
+            text-decoration: none;
+        }
+
+        .card-content .read-more:hover {
+            text-decoration: underline;
+        }
+	.button {
+            background-color: yellow; /* green background */
+            color: black;
+            padding: 5px 5px; /* space inside button */
+            border: none; /* remove border */
+            border-radius: 5px; /* rounded corners */
+            cursor: pointer; /* hand cursor on hover */
+            font-size: 10px; /* text size */
+            transition: 0.3s; /* smooth hover effect */
+        }
+        
+    </style>
+</head>
+
+<body>
+
+    <a href="#" class="card"> 
+        <div class="card-content">
+	    <img src="illustration-article.svg" alt="Curved Image" alt="My Picture" width="100x50" style="border-radius: 15px;">
+            <span href ="#" class="button"> <b>Learning </b> </span>
+	    <p>Published 21 Dec 2023</p>
+            <h3>HTML & CSS foundations</h3>
+            <p>These langaues are the backbone of every website, defining structure, content, and presentation.</p>
+	   <footer>
+        <img src="image-avatar.webp" alt="My Icon" style="width: 5x5;"> Greg Hooper
+    </footer>
+        </div>
+    </a>
+
+</body>
+
+</html>
